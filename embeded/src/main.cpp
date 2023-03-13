@@ -44,7 +44,6 @@ void loop() {
     String url =  String(endpoint) + "/api/temperature";
     http.begin(url);
     http.addHeader("Content-type", "application/json");
-    http.addHeader("Content-length", "23");
 
     StaticJsonDocument<1024> docput;
     String httpRequestData;
